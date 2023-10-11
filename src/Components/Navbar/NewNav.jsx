@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from './NewNav.module.css'
-import { NavLink } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 const NewNav = () => {
   return (
     <header>
@@ -13,51 +13,51 @@ const NewNav = () => {
         <NavLink to="/">Products</NavLink>
         <ul>
           <li>
-            <NavLink to="/">Dog Supplies</NavLink>
+            <NavLink to="/">Forms</NavLink>
             <ul>
               <li>
-                <NavLink to="/">Food &amp; Treats</NavLink>
+                <NavLink to="/Form">Employee Details</NavLink>
               </li>
               <li>
-                <NavLink to="/">Toys</NavLink>
+                <NavLink to="/DynamicForm">Dynamic Form</NavLink>
               </li>
               <li>
-                <NavLink to="/">Beds &amp; Furniture</NavLink>
+                <NavLink to="/FormikForm">Formik Form</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/">Outdoor Supplies</NavLink>
               </li>
               <li>
                 <NavLink to="/">Clothing</NavLink>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li>
-            <NavLink to="/">Cat Supplies</NavLink>
+            <NavLink to="/">Tables</NavLink>
             <ul>
               <li>
-                <NavLink to="/">Food &amp; Treats</NavLink>
+                <NavLink to="/Table">Crud Table</NavLink>
               </li>
               <li>
-                <NavLink to="/">Toys</NavLink>
+                <NavLink to="/Setting">Login Data</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/">Beds &amp; Furniture</NavLink>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li>
-            <NavLink to="/">Bird Supplies</NavLink>
+            <NavLink to="/">Apps</NavLink>
             <ul>
               <li>
-                <NavLink to="/">Food &amp; Treats</NavLink>
+                <NavLink to="/Ecommerce">Ecommerce</NavLink>
               </li>
               <li>
-                <NavLink to="/">Toys</NavLink>
+                <NavLink to="/CarSeller">CarSeller</NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink to="/">Furniture</NavLink>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li>
@@ -107,13 +107,16 @@ const NewNav = () => {
         </ul>
       </li>
       <li>
-        <NavLink to="/">Locations &amp; Hours</NavLink>
+        <NavLink to="/">Others</NavLink>
         <ul>
           <li>
-            <NavLink to="/">North America</NavLink>
+            <NavLink to="/Carousel">Carousel</NavLink>
           </li>
           <li>
-            <NavLink to="/">Europe</NavLink>
+            <NavLink to="/ToggleCards">ToggleCards</NavLink>
+          </li>
+          <li>
+            <NavLink to="/Timer">Circle Timer</NavLink>
           </li>
         </ul>
       </li>
@@ -127,6 +130,17 @@ const NewNav = () => {
             <NavLink to="/">Contact Us</NavLink>
           </li>
         </ul>
+      </li>
+      <li>
+        <NavLink to="/">LogOut</NavLink>
+        {/* <ul>
+          <li>
+            <NavLink to="/">Our Team</NavLink>
+          </li>
+          <li>
+            <NavLink to="/">Contact Us</NavLink>
+          </li>
+        </ul> */}
       </li>
     </ul>
   </nav>

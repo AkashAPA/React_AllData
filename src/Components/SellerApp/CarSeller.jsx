@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Styles from './CarSeller.module.css';
 import CarList from './CarList';
 import Navigation from './Navigation';
-import Navbar from '../Pages/Navbar';
+import NewNav from '../Navbar/NewNav';
+import { useLocation } from 'react-router-dom';
 
 const dummyCarData = [
   {
@@ -173,12 +174,17 @@ const CarSeller = () => {
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
-    setCurrentPage(1); // Reset to the first page when a new search query is entered
+    setCurrentPage(1);
   };
+
+  const location = useLocation(); // Get the current location
+
+  // Conditionally render NewNav based on the location
+  const shouldDisplayNewNav = location.pathname !== '/Home';
 
   return (
     <>
-    <Navbar/>
+      {shouldDisplayNewNav && <NewNav />}
       <div className="container-fluid">
         <div className={Styles.app}>
           <h1>Seller App</h1>
