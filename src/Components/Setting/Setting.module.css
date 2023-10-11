@@ -1,0 +1,153 @@
+/* * {
+    font-family: Open Sans;
+    margin: 0;
+  } */
+  
+  #apartment_dashboard {
+    width: 80%;
+    margin: 20px 10%;
+  }
+  
+  #apartment_dashboard table {
+    border-collapse: collapse;
+  }
+  
+  #apartment_dashboard table, #apartment_dashboard table th, #apartment_dashboard table td {
+    border: 1px solid #bfbfbf;
+  }
+  
+  #apartment_dashboard table th, #apartment_dashboard table td {
+    padding: 8px;
+  }
+  
+  #apartment_dashboard table th {
+    background-color: rgba(102, 204, 255, 0.7);
+  }
+  
+  #apartment_dashboard table tr:nth-child(even) {
+    background-color: rgba(102, 204, 255, 0.1);
+  }
+  
+  #apartment_dashboard table tr:hover {
+    background-color: rgba(102, 204, 255, 0.5);
+  }
+  
+  .apartment_cell {
+    width: 250px;
+  }
+  
+  .owner_cell {
+    width: 200px;
+  }
+  
+  .address_cell {
+    width: 450px;
+  }
+  
+  .added_cell {
+    width: 150px;
+  }
+  
+  .status_cell {
+    width: 150px;
+  }
+  
+  .action_cell {
+    width: 200px;
+  }
+  
+  /* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  } */
+  
+  .li {
+    float: left;
+    width: calc(100% / 3);
+  }
+  
+  .li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-color: #bfbfbf;
+  }
+  
+  #apartment_dashboard ul li {
+    background-color: rgba(102, 204, 255, 0.4)
+  }
+  
+  .li a:hover {
+    background-color: rgba(102, 204, 255, 0.9);
+  }
+  
+  #apartment_dashboard #page_description {
+    margin: 25px 0 25px 15px;
+  }
+  
+  #apartment_dashboard #filter_form {
+  margin: 0 0 10px 0;
+  }
+  
+  #apartment_dashboard #filter_form fieldset {
+  border-radius: 10px;
+  }
+  
+  #apartment_dashboard #filter_form fieldset legend {
+  background-color: rgba(102, 204, 255, 0.7);
+  border-radius: 8px;
+  padding: 2px 5px;
+  }
+  
+  .edit_input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  /* #apartment_dashboard select {
+  outline: none;
+      border: solid 1px #bfbfbf;
+      border-radius: 10px;
+  background-color: rgba(102, 204, 255, 0.1);
+  } */
+  
+  /* #apartment_dashboard #filter_form button {
+  background-color: rgba(102, 204, 255, 0.3);
+  } */
+  
+  .left_float {
+  float: left;
+  }
+  
+  .center_float {
+  float: center;
+  }
+  
+  .right_float {
+  float: right;
+  }
+  
+  #pagination {
+  padding: 20px 0;
+  }
+  
+  /* #pagination .button {
+  padding: 5px 0;
+  text-align: center;
+  width: 125px;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(102, 204, 255, 1);
+  border: 1px solid #bfbfbf;
+  border-radius: 12px;
+  font-weight: bold;
+  } */
+  
+  #pagination p {
+  display: inline-block;
+  }
